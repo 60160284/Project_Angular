@@ -1,0 +1,133 @@
+.image-box {
+    /* Here's the trick */
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    /* Basic background styles */
+    background: var(--image-url) center center;
+    background-size: cover;
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Add a transition, just for fun */
+    transition: box-shadow .3s ease-out;
+}
+
+.image-box:hover {
+    box-shadow: inset 0 0 0 100vw rgba(34, 55, 247, 0.2);
+}
+
+/* For demo only */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.th{
+    font-size: 18px;
+}
+.column2 {
+    width: 150px;
+    padding-left: 55px;
+    font-size: 20px;
+}
+
+.column3 {
+    width: 150px;
+    font-size: 18px;
+}
+
+.column4 {
+    width: 190px;
+    font-size: 18px;
+}
+
+.progress {
+    height: 30px;
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /* z-index: 10; */
+    color: white;
+}
+
+.topic {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.main{
+    height: 500px;
+}
+agm-map {
+   
+ 
+   height: 400px; 
+    width: 500px;
+}
+.map{
+    position: absolute;
+    float: right;
+    top: 280px;
+    right: 150px;
+}
+
+
+.footer{
+
+color: white;
+text-align: center;
+  }
+
+  .column {
+    background-color: rgb(0, 0, 0);
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 260px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .wrap-table100{
+        width: 100%;
+    }
+    .map{
+        width: 100%;
+    }
+  }
+  .photo{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .photo img{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
